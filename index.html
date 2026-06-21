@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<div id="count">Loading...</div>
-
-<script>
 async function updateFollowers() {
     const username = "mamedaihuku777";
     let totalFollowers = 0;
@@ -12,7 +5,7 @@ async function updateFollowers() {
     const limit = 40;
 
     while (true) {
-        const url = `https://api.scratch.mit.edu/users/${username}/followers?limit=${limit}&offset=${offset}`;
+        const url = `https://scartch-api-mamedaihuku777.zaisheng124.workers.dev/users/${username}/followers?limit=${limit}&offset=${offset}`;
         const res = await fetch(url);
         const data = await res.json();
 
@@ -28,7 +21,3 @@ async function updateFollowers() {
 
 setInterval(updateFollowers, 2000);
 updateFollowers();
-</script>
-
-</body>
-</html>
