@@ -5,7 +5,7 @@ async function updateFollowers() {
     const limit = 40;
 
     while (true) {
-        const url = `https://scartch-api-mamedaihuku777.zaisheng124.workers.dev/
+        const url = `https://scartch-api-mamedaihuku777.zaisheng124.workers.dev/users/${username}/followers?limit=${limit}&offset=${offset}`;
         const res = await fetch(url);
         const data = await res.json();
 
