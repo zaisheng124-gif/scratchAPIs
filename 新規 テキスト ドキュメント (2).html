@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="count">Loading...</div>
+
+<script>
+async function updateFollowers() {
+    const username = "mamedaihuku777";
+    let totalFollowers = 0;
+    let offset = 0;
+    const limit = 40;
+
+    while (true) {
+        const url = `https://api.scratch.mit.edu/users/${username}/followers?limit=${limit}&offset=${offset}`;
+        const res = await fetch(url);
+        const data = await res.json();
+
+        // データが0件 → もうフォロワーはいない
+        if (data.length === 0) break;
+
+        totalFollowers += data.length;
+        offset += limit; // 次の40件へ
+    }
+
+    document.getElementById("count").innerText =
+        `${username} のフォロワー数：${totalFollowers}`;
+}
+
+setInterval(updateFollowers, 2000); // 2秒ごと更新
+updateFollowers();
+</script>
+
+</body>
+</html>
