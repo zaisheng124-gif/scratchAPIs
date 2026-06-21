@@ -16,18 +16,17 @@ async function updateFollowers() {
         const res = await fetch(url);
         const data = await res.json();
 
-        // データが0件 → もうフォロワーはいない
         if (data.length === 0) break;
 
         totalFollowers += data.length;
-        offset += limit; // 次の40件へ
+        offset += limit;
     }
 
     document.getElementById("count").innerText =
         `${username} のフォロワー数：${totalFollowers}`;
 }
 
-setInterval(updateFollowers, 2000); // 2秒ごと更新
+setInterval(updateFollowers, 2000);
 updateFollowers();
 </script>
 
