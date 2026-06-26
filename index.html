@@ -1,9 +1,4878 @@
-async function getFollowers() {
-  const url = "https://scratchdb.lefty.one/v2/user/info/mamedaihuku777/";
-  const res = await fetch(url);
-  const data = await res.json();
-  console.log("Followers:", data.followers);
-  return data.followers;
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+  
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NBMRDKQ');</script>
+    <!-- End Google Tag Manager -->
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+     
+    <meta name="google-site-verification" content="m_3TAXDreGTFyoYnEmU9mcKB4Xtw5mw6yRkuJtXRKxM" />
+    <title>mamedaihuku777 on Scratch</title>
+    
+
+<meta name="description" content="mamedaihuku777 on Scratch" />
+
+    <link rel="stylesheet" href="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__/vendor/redmond/jquery.ui.all.css" />
+    
+        <link href="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__/css/main.css" rel="stylesheet" type="text/css" />
+   
+   <link rel="stylesheet" href="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//css/handheld.css" media="handheld, only screen and (max-device-width:480px)"/>
+
+    
+<!-- templates/profiles/profile_detail.html block css -->
+<link href="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//css/pages/profile.css" rel="stylesheet" />
+<link href="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//vendor/redmond/jquery.ui.all.css" rel="stylesheet"/>
+<link href="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//css/modules/modal.css" rel="stylesheet"/>
+<!-- end block css -->
+
+    <script type="text/javascript" src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//js/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__/js/lib/underscore-min.js"></script>
+    <script type="text/javascript" src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//js/gaq-ga4.js"></script>
+    <script>
+      window.console||(window.console={log:$.noop,error:$.noop,debug:$.noop}); // ensure console fails gracefully when missing
+      var sessionCookieName = 'scratchsessionsid';
+      
+      
+      
+      _gaq.push(['_setCustomVar', 2, 'status', 'logged_in', 2]);
+      
+      
+
+    </script>
+    <script type="text/javascript">
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        function setCookie(name, value, days) {
+            var expires;
+
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toGMTString();
+            } else {
+                expires = "";
+            }
+            document.cookie = escape(name) + "=" + escape(value) + expires + "; path=/";
+        }
+    </script>
+    
+  <script>
+    
+
+var Scratch = Scratch || {};
+Scratch.INIT_DATA = Scratch.INIT_DATA || {};
+
+
+
+Scratch.INIT_DATA.ADMIN = false;
+Scratch.INIT_DATA.LOGGED_IN_USER = {
+  
+  model: {
+    username: 'mamedaihuku777',
+    username_truncated: 'mamedaihuku777',
+    has_outstanding_email_confirmation: 'false',
+    
+    id: 149129299,
+    profile_url: '/users/mamedaihuku777/',
+    thumbnail_url: '//uploads.scratch.mit.edu/users/avatars/149129299.png'
+     
+  },
+  
+  options: {
+    
+      authenticated: true
+    
+    
+  
+  ,myProfile: true
+  
+
+  
+  ,follower: true
+  
+
+
+  }
+};
+
+Scratch.INIT_DATA.project_comments_enabled = true;
+Scratch.INIT_DATA.gallery_comments_enabled = true;
+Scratch.INIT_DATA.userprofile_comments_enabled = true;
+
+Scratch.INIT_DATA.BROWSERS_SUPPORTED = {
+
+  chrome: 35,
+  firefox: 31,
+  msie: 8,
+  safari: 7
+};
+
+Scratch.INIT_DATA.TEMPLATE_CUES = {
+
+  unsupported_browser: true,
+  welcome: true,
+  confirmed_email: false
+};
+
+
+
+
+Scratch.INIT_DATA.PROFILE = {
+  model: {
+    id: 'mamedaihuku777',
+    userId: 149129299,
+    username: 'mamedaihuku777',
+    thumbnail_url: '//uploads.scratch.mit.edu/users/avatars/149129299.png',
+    comments_allowed: true
+  },
+  related_counts: {
+  }
+   
+  ,featuredProject: {
+    title: '逆走学校Funk再現してみた ',
+    id: 1322979468, 
+    creator: 'mamedaihuku777',
+    isPublished: true,
+  },
+  featuredProjectLabel: "私のお気に入り"
+ 
+}  
+Scratch.INIT_DATA.ADMIN_PANEL = {
+  'adminURL': '/users/mamedaihuku777/admin/'
 }
 
-getFollowers();
+
+
+
+Scratch.INIT_DATA.IS_IP_BANNED = false;
+
+Scratch.INIT_DATA.GLOBAL_URLS = {
+  'media_url': '//uploads.scratch.mit.edu/',
+  'static_url': '//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__/',
+  'static_path': '/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__/'
+}
+
+Scratch.INIT_DATA.IS_SOCIAL = true;
+
+  </script>
+
+
+    <meta property="og:type" content="website" />
+    
+    <meta property="og:description" content="Make games, stories and interactive art with Scratch. (scratch.mit.edu)"/>
+    
+
+    
+    <meta property="og:title" content="Scratch - Imagine, Program, Share"/>
+    <meta property="og:url" content="https://scratch.mit.edu/users/mamedaihuku777/" />
+    
+
+  </head>
+
+  <body class="" >
+  
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBMRDKQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  
+  <!--[if lte IE 8]>
+  <div class="unsupported-browser banner" data-cue="unsupported_browser">
+    <div class="container">
+      <span>Scratch supports Internet Explorer 9+. We suggest you upgrade to <a href="/info/faq/#requirements">a supported browser</a>, <a href="/scratch2download/">download the offline editor</a>, or <a href="https://en.scratch-wiki.info/wiki/List_of_Bug_Workarounds">read about common workarounds</a>.</span>
+    </div>
+  </div>
+  <![endif]-->
+    <div id="pagewrapper">
+      
+      
+      <div id="topnav" >
+      <div class="innerwrap">
+        <div class="container">
+          <a href="/" class="logo"><span class="scratch"></span></a>
+          <ul class="site-nav">
+            <li><a id="project-create" href="/projects/editor/?tip_bar=home">作る</a></li><li><a href="/explore/projects/all">見る</a></li><li class="last"><a href="/ideas">アイデア</a></li>
+          </ul>
+          
+          <form class="search" action="/search/projects" method="get" class="search">
+            <input type="submit" class="glass" value="">
+            
+	          <input id="search-input" type="text" placeholder="検索" name="q" >
+          </form>
+          
+          <ul class="account-nav"></ul>
+          <script type="text/template" id="template-account-nav-logged-out">
+          <ul class="account-nav" >
+              <li class="join-scratch"><a href="/join">Scratchに参加しよう</a></li><li id="login-dropdown" class="sign-in dropdown"><span data-toggle="dropdown" class="dropdown-toggle"><span>サインイン</span></span><div class="popover bottom dropdown-menu"><div class="arrow"></div><div class="popover-content" ><form method="post" id="login" action="#"><label for="username">ユーザー名</label><input type="text" id="login_dropdown_username" name="username" maxlength="30" class="wide username" /><label for="password" class="password">パスワード</label><input type="password" name="password" class="wide password" /><div class="ajax-loader" style="display:none; float: left;"></div><button type="submit">サインイン</button><span class="forgot-password"><a href="/accounts/password_reset/">ヘルプが必要ですか?</a></span><div class="error"></div></form></div></div></li><li data-control="modal-login" class="sign-in mobile"><span>サインイン</span></li>
+          </ul>
+          </script>
+          <script type="text/template" id="template-account-nav-logged-in">
+          <ul class="account-nav logged-in"><li class="messages"><a title="メッセージ - 更新情報とお知らせ" href="/messages" class="messages-icon"><span class="notificationsCount none">0</span></a></li><li class="my-stuff"><a title="私の作品 - 作品の管理と制作の場所" href="/mystuff/" class="mystuff-icon"></a></li><li class="logged-in-user dropdown"><span class="user-name dropdown-toggle" data-toggle="dropdown"><div class="avatar-wrapper <%- LOGGED_IN_USER.model.membership_avatar_badge ? 'avatar-badge-wrapper' : '' %>"><img class="user-icon <%- LOGGED_IN_USER.model.membership_avatar_badge ? 'avatar-badge' : '' %>" src="<%- LOGGED_IN_USER.model.thumbnail_url %>" width="24" height="24"></div><%- LOGGED_IN_USER.model.username_truncated %><span class="caret"></span></span><div class="dropdown-menu blue" ><ul class="user-nav"><li><a href="<%- LOGGED_IN_USER.model.profile_url %>">プロフィール</a></li><li><a href="/mystuff/">私の作品</a></li><% if (LOGGED_IN_USER.model.is_educator){ %><li><a href="/educators/classes/">私のクラス</a></li><% } %><% if (LOGGED_IN_USER.model.is_student){ %><li><a href="/classes/<%- LOGGED_IN_USER.model.classroom_id %>/">自分のクラス</a></li><% } %><li><a href="/accounts/settings/">アカウント設定</a></li><li id="logout" class="logout divider"><form method="post" action="/accounts/logout/"><input type='hidden' name='csrfmiddlewaretoken' value='R0JBO9YMEKzpJI18FFw4CQohnpiweaby' /><input type="submit" value="サインアウト"></form></li></ul></div></li></ul>
+          </script>
+          <script type="text/javascript" src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__/js/account-nav.js"></script>
+        </div>
+        <iframe class="iframeshim" frameborder="0" scrolling="no"><html><head></head><body></body></html></iframe>
+      </div><!-- innerwrap -->
+      </div>
+        
+
+      <div class="privacy-update banner" style="display:none;">
+        <div class="container">
+          <span>The Scratch privacy policy has been updated, effective May 25, 2023. You can see the new policy <a href="https://mitscratch.freshdesk.com/en/support/solutions/articles/4000219339-privacy-policy">here</a>.</span>
+          <div class="close">x</div>
+        </div>
+      </div>
+
+      <div class="confirm-email banner" data-cue="confirmed_email" style="display:none;">
+        <div class="container">
+          <span>
+            
+             A parent needs to <a id="confirm-email-popup" href="#">confirm your account</a> before you can share projects. 
+            
+          </span>
+          <div class="close">x</div>
+        </div>
+      </div>
+
+      <div class="email-outage banner" style="display:none; background-color:#FF661A;">
+        <div class="container">
+          <span>We are experiencing a disruption with email delivery. If you are not receiving emails from us, please try after 8am EST.</span>
+          <div class="close">x</div>
+        </div>
+      </div>
+
+        
+        <div class="container" id="content">
+        <div id="alert-view"></div>
+        
+
+
+  
+
+<!-- templates/profiles/profile_detail.html block main-content -->
+<div class="box" id="profile-data">
+  <div class="box-head">
+    <form id="profile-avatar" class="portrait">
+      <div class="avatar">
+      <a href="/users/mamedaihuku777/">
+        <img src="//cdn2.scratch.mit.edu/get_image/user/149129299_60x60.png" width="55" height="55"/>
+        <div class="loading-img s48"></div>
+      </a>
+      
+        
+        <div data-control="edit">Change
+          <input class="hidden" type="file" accept="image/*" name="file" />
+        </div>
+        
+      
+    </div>
+    </form>
+    <div class="header-text">
+      <h2>mamedaihuku777</h2>
+      <p class="profile-details">
+      
+      <span class="group">
+        Scratcher
+         
+        
+      </span> 
+      <span title="2025-01-12">1 年, 5 ヶ月</span> 前に参加
+      <span class="location">Japan</span>
+      </p>
+    </div>
+    
+    
+  </div>
+  <div class="box-content" id="profile-box">
+    <div class="action-bar">
+      <div id="alert-view" class="">
+      </div>
+    </div>
+    <div class="inner clearfix">
+      <div class="user-content">
+        <div id="user-details" class="about">
+          <div class="loading-img s48"></div>
+          <h3>私について</h3>
+          
+            
+              <div id="bio" class="editable read" data-username="mamedaihuku777">
+              <span data-content="prompt">簡単に自己紹介してください。</span>
+                <span class="small-text">あと <span id="bio-chars-left">200</span> 文字。</span>
+                <form>
+                  <textarea name="bio">Most of the English I speak is done using translation software, so it&#39;s not very accurate. Sorry about that.
+
+称号：お茶好きの掃除嫌いのロボット
+
+恐らく次元一承認欲求の高い中一日本人
+(日本人が承認欲求高いという意味ではない)
+スク友募集中(上限なし)
+
+宣伝大歓迎(僕自身h((するよ)</textarea>
+                </form>
+              </div>
+            
+          
+
+          <h3>私が取り組んでいること</h3>
+          
+          
+          <div id="status" class="editable read" data-username="mamedaihuku777">
+          <span data-content="prompt">あなたが取り組んでいることを説明してください。</span>
+            <span class="small-text">あと<span id="status-chars-left">200</span>文字。</span>
+            <form>
+              <textarea name="status">2025/01/12：アカウント作成日
+
+今年中にフォロワー500目指してる。
+だからフォローしてくれ☆
+
+クソを作って遊んでるよ
+
+フォローしてくれたら多分お礼言うよ
+
+フォロバして欲しいなら言ってね
+私のプロフィコメ欄かホームページかに
+（気分で変わるかもだけど）
+
+フォローしたら外さないよ(一部例外有)
+
+スク友のみんな
+@48599f さん
+@YukimiDaihuku119 さん</textarea>
+            </form>
+          </div>
+          
+          
+        </div>
+
+        
+            <div class="player">
+                <h3 class="featured-project-heading">私のお気に入り</h3>
+                <div class="stage" style="width: 282px;">
+                    <a href="/projects/1322979468/" id="featured-project">
+                        <img src="//cdn2.scratch.mit.edu/get_image/project/1322979468_282x210.png" width="282" height="210" alt="Featured project"/>
+                        
+                            <div data-control="edit">注目のプロジェクトを変更する</div>
+                        
+                    </a>
+                </div>
+                <span class="title">
+                    <a class="project-name" href="/projects/1322979468/">逆走学校Funk再現してみた </a>
+                </span>
+
+            </div>
+        
+      </div>
+        <div class="doing">
+            <h3>私が行ったこと</h3>
+          <div id="activity-feed">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="footer">
+  
+  </div>
+</div>
+<div class="profile-box-footer-module" id="profile-box-footer">
+</div>
+
+
+
+
+<div class="box slider-carousel-container prevent-select" >
+  <div class="box-head">
+      <h4>共有したプロジェクト (100+)</h4>
+    <a href="/users/mamedaihuku777/projects/" data-control="view-all">すべてを見る</a>
+  </div>
+  <div class="box-content slider-carousel horizontal" id="shared">
+    
+    <div class="viewport">
+      <ul class="scroll-content">
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1333197564/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1333197564_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1333197564/">ﾜﾎｰ【ベクター画】</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1334118388/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1334118388_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1334118388/">アメデジ9話が！9話が！公開されてて！驚いた！Σ（・□・；）</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1332848059/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1332848059_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1332848059/">コスチューム一つで映像を再生！？ (凄い)</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1332683933/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1332683933_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1332683933/">お茶好きの/お掃除嫌いの/ロボット</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1332295581/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1332295581_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1332295581/">インデックスとはなんぞや</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1332251685/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1332251685_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1332251685/">uououououououuououououo</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1332282226/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1332282226_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1332282226/">ボケたから364364</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1330221990/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1330221990_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1330221990/">俺の学タブにデータを送る用のプロジェクト</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1330817729/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1330817729_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1330817729/">Untitled-54</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1327622759/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1327622759_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1327622759/">架空チャット remix</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1326647167/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1326647167_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1326647167/">枠生成 remix</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1325994896/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1325994896_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1325994896/">これでボケたつもりです。</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1324369849/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1324369849_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1324369849/">俺のステタース</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1324089083/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1324089083_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1324089083/">ケ。ー傾向の消滅についてー</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1323873578/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1323873578_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1323873578/">オンライン プラットフォーマー ゲーム 録画機能付き</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1322979468/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1322979468_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1322979468/">逆走学校Funk再現してみた </a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1320963619/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1320963619_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1320963619/">バカ通信 MV</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1318497521/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1318497521_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1318497521/">疑似乱数生成機</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1318345462/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1318345462_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1318345462/">依頼受け付けます。</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1316817462/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1316817462_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1316817462/">カイル君念願の復活</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/mamedaihuku777/">mamedaihuku777</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+      </ul>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<div class="box slider-carousel-container prevent-select" >
+  <div class="box-head">
+      <h4>お気に入りのプロジェクト</h4>
+    <a href="/users/mamedaihuku777/favorites/" data-control="view-all">すべてを見る</a>
+  </div>
+  <div class="box-content slider-carousel horizontal" id="favorites">
+    
+    <div class="viewport">
+      <ul class="scroll-content">
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1323659127/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1323659127_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1323659127/">しょぼんめーかー　Ver.1.0.4</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/neguchi_SMM2/">neguchi_SMM2</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/873654199/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/873654199_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/873654199/">【素材140個】ヒカマニ超音声素材集１ v1.1【Hikakin_Mania】</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/O_TATTA/">O_TATTA</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1259357243/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1259357243_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1259357243/">【素材152個】ヒカマニ超音声素材集８【Hikakin_Mania】</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/O_TATTA/">O_TATTA</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/927061444/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/927061444_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/927061444/">ヒカマニBOSS RUSHシューティング v.1.1【Hikakin_Mania】</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/O_TATTA/">O_TATTA</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/29999906/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/29999906_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/29999906/">Pong Starter remix　</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/hikakin/">hikakin</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/835208203/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/835208203_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/835208203/">HikakinTV OP</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/ItsuLo_SR/">ItsuLo_SR</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/514967012/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/514967012_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/514967012/">パソコン(ver.3.5)</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/KKT30200/">KKT30200</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1329286891/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1329286891_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1329286891/">宇宙の彼方</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/Temucha/">Temucha</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1334298080/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1334298080_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1334298080/">〔改装杯〕　#猫改造コンテスト</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/Temucha/">Temucha</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/562533693/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/562533693_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/562533693/">Among Usアニメ</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/yuuu12/">yuuu12</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/564055033/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/564055033_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/564055033/">Among UsアニメⅣ</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/yuuu12/">yuuu12</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1326860504/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1326860504_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1326860504/">──────────────── █▀▀▀█─▄▄█▄▄───── ───▄▀─▄─█─▄─▀▀▀─ ─▀▀──▀──█──▀──── ──────────────── ───────────────</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/igokunn/">igokunn</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1309362545/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1309362545_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1309362545/">トモダチコレクション</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/TatsuMitsu2023/">TatsuMitsu2023</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1288342995/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1288342995_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1288342995/">【拡散希望】本気でモササウルス描いてみた！</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/75thuijkl/">75thuijkl</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1331108071/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1331108071_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1331108071/">アンタイトルアニメその1喧嘩</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/NANOmaru6/">NANOmaru6</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1321545467/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1321545467_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1321545467/">AIZO</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/yoyossy/">yoyossy</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/179408595/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/179408595_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/179408595/">3D Stacking Skyscraper</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/Simonsez04/">Simonsez04</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/879284572/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/879284572_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/879284572/">IQテスト  1     </a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/t32657/">t32657</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/322512122/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/322512122_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/322512122/">IQ Test!</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/insanescratches/">insanescratches</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+  <a href="/projects/1330080930/">
+    <img class="lazy image" data-original="//cdn2.scratch.mit.edu/get_image/project/1330080930_144x108.png" width="144" height="108" />
+  </a>
+  <span class="title">
+    <a href="/projects/1330080930/">雑談所(ざつだんどころ)[ざつどこ]</a>
+  </span>
+  <span class="owner" >
+      
+        
+            書いた人 <a href="/users/zatudoko_official/">zatudoko_official</a>
+            <!-- 
+              When rendered from the profile page, we have `profile` in the context.
+              We only want to hide the membership label from the project thumbnail
+              when displayed from the profile page on the user's own profile.
+              The purpose is to reduce visual overload from membership elements.
+            -->
+            
+        
+      
+  </span>
+  
+</li>
+<!-- end templates/carousel/project-thumb.html -->
+
+
+
+
+      
+      </ul>
+    </div>
+    
+
+  </div>
+</div>
+
+
+
+
+<div class="box slider-carousel-container prevent-select" >
+  <div class="box-head">
+      <h4>私がフォローしているスタジオ</h4>
+    <a href="/users/mamedaihuku777/studios_following/" data-control="view-all">すべてを見る</a>
+  </div>
+  <div class="box-content slider-carousel horizontal" id="featured">
+    <div class="viewport">
+      <ul class="scroll-content">
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51765928/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51765928_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51765928/">しょぼんめーかー スタジオ
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51732549/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51732549_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51732549/">カオスタジオ
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/1155810/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/1155810_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/1155810/">Animal Lovers 
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51709017/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51709017_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51709017/">セイキン様共和国
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/50739479/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/50739479_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/50739479/">mamedaihuku777のフォロワー様専用スタジオ
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51282825/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51282825_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51282825/">ゲーム自信作入れて！！
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/35625948/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/35625948_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/35625948/">1
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/35625947/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/35625947_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/35625947/">2
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/35625946/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/35625946_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/35625946/">3
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/35625941/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/35625941_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/35625941/">4
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51753139/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51753139_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51753139/">フォロワー1kありがとう！
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/5108996/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/5108996_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/5108996/">-
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51748324/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51748324_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51748324/">猫耳の人専用スタジオ(なんでもスタジオ)
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/34627031/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/34627031_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/34627031/">まずは
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/34627028/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/34627028_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/34627028/">たわしを
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/34627014/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/34627014_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/34627014/">ーロォフ
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/34626983/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/34626983_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/34626983/">(ﾟ∀ﾟ)
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51742290/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51742290_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51742290/">猫耳雑談所
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/34944580/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/34944580_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/34944580/">Among us MOD部屋
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51679684/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51679684_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51679684/">トモコレ　スクラ版      　　　　公式スタジオ
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="box slider-carousel-container prevent-select" >
+  <div class="box-head">
+      <h4>私がキュレーションしたスタジオ</h4>
+    <a href="/users/mamedaihuku777/studios/" data-control="view-all">すべてを見る</a>
+  </div>
+  <div class="box-content slider-carousel horizontal" id="featured">
+    <div class="viewport">
+      <ul class="scroll-content">
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/33761689/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/33761689_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/33761689/">小中高生のスタジオ(作品入れてOK)
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51735151/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51735151_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51735151/">naruruun76　　　　　フォロワースタジオ
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51765928/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51765928_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51765928/">しょぼんめーかー スタジオ
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51764229/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51764229_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51764229/">フォロワー５００人記念！ゲッタン再現してみた！
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51732549/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51732549_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51732549/">カオスタジオ
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51756167/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51756167_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51756167/">拡散用マイクラしょうもない豆知識3選！
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51755966/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/default_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51755966/">宣伝
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51753196/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51753196_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51753196/">⚡️なんでもスタジオ!!
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51282825/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51282825_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51282825/">ゲーム自信作入れて！！
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51742720/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/default_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51742720/">返信をしまくれ過去最強の雑談所
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51753139/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51753139_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51753139/">フォロワー1kありがとう！
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51753001/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/default_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51753001/">予告
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51748527/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51748527_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51748527/">猫耳スタジオ！！！　なんでも入れて！！！
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51754049/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51754049_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51754049/">yoyossyさんとmamedaihuku777のコラボについて話し合うスタジオ
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51753457/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51753457_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51753457/">拡散用！メズマライザーが16年前にあった世界線
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51753792/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51753792_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51753792/">神雑談所
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51752559/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51752559_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51752559/">神雑談所　サムコン結果
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51750932/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51750932_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51750932/">猫耳教
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51747318/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51747318_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51747318/">神雑談所を見捨ててないか？w
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+        
+
+
+
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+  <a href="/studios/51748069/" class="image">
+    <span class="image">
+      <img class="lazy" data-original="//cdn2.scratch.mit.edu/get_image/gallery/51748069_170x100.png" width="170" height="100" />
+    </span>
+    <span class="stats">
+      <span class="icon-sm studio white"></span>
+    </span>
+  </a>
+  <span class="title">
+    <a href="/studios/51748069/">taichyyyのフォロワー様スタジオ
+    </a>
+  </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->
+
+
+      
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="box slider-carousel-container prevent-select" >
+  <div class="box-head">
+    <h4>フォロー</h4>
+    <a href="/users/mamedaihuku777/following/" data-control="view-all">すべてを見る</a>
+  </div>
+  <div class="box-content slider-carousel horizontal" id="featured">
+    
+    <div class="viewport">
+      <ul class="scroll-content">
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/Kawaii/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/36997_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/Kawaii/">Kawaii
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/Scratchteam/"
+        class="avatar-wrapper avatar-badge-wrapper">
+        <img
+            class="lazy avatar-badge"
+            data-original="//cdn2.scratch.mit.edu/get_image/user/119198_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/Scratchteam/">Scratchteam
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/ScratchBlocks/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/329346_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/ScratchBlocks/">ScratchBlocks
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/zorket/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/530513_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/zorket/">zorket
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/DiamondGames/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/1090057_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/DiamondGames/">DiamondGames
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/griffpatch/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/1882674_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/griffpatch/">griffpatch
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/TWY_/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/2076939_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/TWY_/">TWY_
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/shiopapa/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/2379509_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/shiopapa/">shiopapa
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/aktsky/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/2556714_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/aktsky/">aktsky
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/griffpatch_tutor/"
+        class="avatar-wrapper avatar-badge-wrapper">
+        <img
+            class="lazy avatar-badge"
+            data-original="//cdn2.scratch.mit.edu/get_image/user/2690799_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/griffpatch_tutor/">griffpatch_tutor
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/NYANKO/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/default_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/NYANKO/">NYANKO
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/cosmo-zero/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/3656317_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/cosmo-zero/">cosmo-zero
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/FunnyAnimatorJimTV/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/4291425_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/FunnyAnimatorJimTV/">FunnyAnimatorJimTV
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/su2014080902/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/4557995_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/su2014080902/">su2014080902
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/World_Languages/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/4648559_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/World_Languages/">World_Languages
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/butanono/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/4648733_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/butanono/">butanono
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/hikakin/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/default_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/hikakin/">hikakin
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/hikakintv/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/default_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/hikakintv/">hikakintv
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/ichig/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/9319428_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/ichig/">ichig
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/inotomoking/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/9784152_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/inotomoking/">inotomoking
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+      </ul>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+<div class="box slider-carousel-container prevent-select" >
+  <div class="box-head">
+    <h4>フォロワー</h4>
+    <a href="/users/mamedaihuku777/followers/" data-control="view-all">すべてを見る</a>
+  </div>
+  <div class="box-content slider-carousel horizontal" id="featured">
+    <div class="viewport">
+      <ul class="scroll-content">
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/pipopipo777/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/143200350_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/pipopipo777/">pipopipo777
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/kouta0720/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/74425933_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/kouta0720/">kouta0720
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/mamedaihuku777/"
+        class="avatar-wrapper avatar-badge-wrapper">
+        <img
+            class="lazy avatar-badge"
+            data-original="//cdn2.scratch.mit.edu/get_image/user/149129299_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/mamedaihuku777/">mamedaihuku777
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/hikakinmanialoop/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/119280878_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/hikakinmanialoop/">hikakinmanialoop
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/Nao435/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/121858879_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/Nao435/">Nao435
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/neko572/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/149148820_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/neko572/">neko572
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/higasityuukouka/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/137451959_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/higasityuukouka/">higasityuukouka
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/ko_0109/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/88237056_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/ko_0109/">ko_0109
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/ReverseCornerCut/"
+        class="avatar-wrapper avatar-badge-wrapper">
+        <img
+            class="lazy avatar-badge"
+            data-original="//cdn2.scratch.mit.edu/get_image/user/148495116_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/ReverseCornerCut/">ReverseCornerCut
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/keita0809/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/117027342_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/keita0809/">keita0809
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/otarou0228/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/126596648_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/otarou0228/">otarou0228
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/kimetu1416/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/66466009_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/kimetu1416/">kimetu1416
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/sumairudayo/"
+        class="avatar-wrapper avatar-badge-wrapper">
+        <img
+            class="lazy avatar-badge"
+            data-original="//cdn2.scratch.mit.edu/get_image/user/140527775_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/sumairudayo/">sumairudayo
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/mika_0910/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/148562742_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/mika_0910/">mika_0910
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/nyanngorou/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/138969445_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/nyanngorou/">nyanngorou
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/sousou0703/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/118066477_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/sousou0703/">sousou0703
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/kaniunitako/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/140508592_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/kaniunitako/">kaniunitako
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/sena0321/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/22600125_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/sena0321/">sena0321
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/shoooogo/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/95903276_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/shoooogo/">shoooogo
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+          <!-- templates/carousel/user-thumb.html -->
+
+
+
+
+
+
+
+    <li class="user thumb item">
+    <a
+        href="/users/Nyannko1005/"
+        class="avatar-wrapper ">
+        <img
+            class="lazy "
+            data-original="//cdn2.scratch.mit.edu/get_image/user/150285161_60x60.png"
+            width="60"
+            height="60">
+    </a>
+    <span class="title">
+        <a href="/users/Nyannko1005/">Nyannko1005
+        </a>
+    </span>
+    </li>
+
+<!-- end templates/carousel/user-thumb.html -->
+
+
+
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="box">
+  <div class="box-head">
+    <h4>コメント</h4>
+  </div>
+  <div class="box-content">
+    
+    
+    
+
+
+
+
+<div id="comments">
+  
+  
+    <div id="comments-enabled-box" class="action-bar white scroll">
+        <input type="checkbox" name="comments-enabled" id="comments-enabled" />
+        <label for="comments-enabled"> コメントをオフにする</label>
+    </div>
+  
+  
+  <div id="comment-form">
+    
+        <div class="avatar-wrapper avatar-badge-wrapper">
+            <img class="avatar avatar-badge" src="//cdn2.scratch.mit.edu/get_image/user/149129299_60x60.png" width="45" height="45"/>
+        </div>
+    
+    
+    
+        <form id="main-post-form" class="comments-on" >
+            <div class="control-group tooltip right">
+                
+                <textarea name="content" placeholder="コメントを書く" ></textarea>
+                
+                <span id="comment-alert" class="hovertext error" data-control="error" data-content="comment-error"><span class="arrow"></span><span class="text"></span></span>
+                <span class="small-text">残り<span id="chars-left">500</span>文字。</span>
+            </div>
+            <div class="control-group">
+                <div class="button small" data-control="post" data-parent-thread="" data-commentee-id=""><a href="#null">投稿</a></div>
+            <div class="button small grey" data-control="cancel"><a href="#null">キャンセル</a></div>
+                <span class="notification"></span>
+            </div>
+        </form>
+        
+    
+    <div class="clearfix"></div>
+  </div>
+  <div>
+    <ul class="comments" data-content="comments">
+      <li id="comments-loading" class="top-level-reply"><span>コメントを読み込み中...</span></li>
+    </ul>
+  </div>
+</div>
+
+    
+  </div>
+</div>
+<!-- end block main-content -->
+
+
+        </div>
+
+
+        
+        
+    </div>
+    <div id="footer">
+      <div class="container">
+        <style>
+          #footer ul.footer-col li {
+            list-style-type:none;
+            display: inline-block;
+            width: 184px;
+            text-align: left;
+            vertical-align: top;
+          }
+
+          #footer ul.footer-col li h4 {
+            font-weight: bold;
+            font-size: 14px;
+            color: #666;
+          }
+
+        </style>
+        <ul class="clearfix footer-col">
+          <li>
+            <h4>Scratchについて</h4>
+            <ul>
+              <li><a href="https://www.scratchfoundation.org">Scratchについて</a></li>
+              <li><a href="/parents/">保護者の方へ</a></li>
+              <li><a href="/educators/">教育関係者の方へ</a></li>
+              <li><a href="/developers">開発者向け</a></li>
+              <li><a href="/info/credits/">私たちのチーム</a></li>
+              <li><a href="https://www.scratchfoundation.org/supporters">寄付者</a></li>
+              <li><a href="/jobs/">求人</a></li>
+              <li><a href = "https://www.scratchfoundation.org/donate">寄付</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>コミュニティ</h4>
+            <ul>
+              <li><a href = "/community_guidelines/">コミュニティーガイドライン</a></li>
+              <li><a href = "/discuss/">ディスカッションフォーラム</a></li>
+              <li><a href = "http://wiki.scratch.mit.edu/">Scratch Wiki</a></li>
+              <li><a href = "/statistics/">統計情報</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>リソース</h4>
+            <ul>
+              <li><a href = "/starter-projects">Starter Projects</a></li>
+              <li><a href = "/ideas">アイデア</a></li>
+              <li><a href = "/info/faq/">FAQ</a></li>
+              <li><a href = "/download">ダウンロード</a></li>
+              <li><a href = "/contact-us/">連絡先</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>法的表示</h4>
+            <ul>
+              <li><a href="https://mitscratch.freshdesk.com/en/support/solutions/articles/4000219182-scratch-terms-of-service">Terms of Service</a></li>
+              <li><a href="https://mitscratch.freshdesk.com/en/support/solutions/articles/4000219339-scratch-privacy-policy">Privacy Policy</a></li>
+              <li><a href = "/cookies/">Cookies</a></li>
+              <li><a href = "/DMCA/">デジタルミレニアム著作権法（DMCA）</a></li>
+              <li><a href = "https://www.scratchfoundation.org/dsa/">DSA Requirements</a></li>
+              <li><a href = "https://accessibility.mit.edu/">MIT Accessibility</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>関連サイト</h4>
+            <ul>
+              <li><a href="http://scratched.gse.harvard.edu/">ScratchEd</a></li>
+              <li><a href="http://www.scratchjr.org/">ScratchJr</a></li>
+              <li><a href="http://day.scratch.mit.edu/">Scratch Day</a></li>
+              <li><a href="/conference/">Scratchカンファレンス</a></li>
+              <li><a href="http://www.scratchfoundation.org/">Scratch財団</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="clearfix" id="footer-menu" >
+          <li>
+            <form id="lang-dropdown" method="post" action="/i18n/setlang/">
+              <select id="language-selection" name="language">
+              
+                <option value="ab" >Аҧсшәа</option>
+              
+                <option value="af" >Afrikaans</option>
+              
+                <option value="ar" >العربية</option>
+              
+                <option value="ast" >Asturianu</option>
+              
+                <option value="am" >አማርኛ</option>
+              
+                <option value="an" >Aragonés</option>
+              
+                <option value="az" >Azeri</option>
+              
+                <option value="id" >Bahasa Indonesia</option>
+              
+                <option value="bn" >বাংলা</option>
+              
+                <option value="be" >Беларуская</option>
+              
+                <option value="bg" >Български</option>
+              
+                <option value="ca" >Català</option>
+              
+                <option value="cs" >Česky</option>
+              
+                <option value="cy" >Cymraeg</option>
+              
+                <option value="da" >Dansk</option>
+              
+                <option value="de" >Deutsch</option>
+              
+                <option value="et" >Eesti</option>
+              
+                <option value="el" >Ελληνικά</option>
+              
+                <option value="en" >English</option>
+              
+                <option value="es" >Español (España)</option>
+              
+                <option value="es-419" >Español Latinoamericano</option>
+              
+                <option value="eo" >Esperanto</option>
+              
+                <option value="eu" >Euskara</option>
+              
+                <option value="fa" >فارسی</option>
+              
+                <option value="fil" >Filipino</option>
+              
+                <option value="fr" >Français</option>
+              
+                <option value="fy" >Frysk</option>
+              
+                <option value="ga" >Gaeilge</option>
+              
+                <option value="gd" >Gàidhlig</option>
+              
+                <option value="gl" >Galego</option>
+              
+                <option value="ko" >한국어</option>
+              
+                <option value="ha" >Hausa</option>
+              
+                <option value="hy" >Հայերեն</option>
+              
+                <option value="he" >עִבְרִית</option>
+              
+                <option value="hi" >हिंदी</option>
+              
+                <option value="hr" >Hrvatski</option>
+              
+                <option value="xh" >isiXhosa</option>
+              
+                <option value="zu" >isiZulu</option>
+              
+                <option value="is" >Íslenska</option>
+              
+                <option value="it" >Italiano</option>
+              
+                <option value="ka" >ქართული ენა</option>
+              
+                <option value="kk" >қазақша</option>
+              
+                <option value="qu" >Kichwa</option>
+              
+                <option value="sw" >Kiswahili</option>
+              
+                <option value="ht" >Kreyòl ayisyen</option>
+              
+                <option value="ku" >Kurdî</option>
+              
+                <option value="ckb" >کوردیی ناوەندی</option>
+              
+                <option value="lv" >Latviešu</option>
+              
+                <option value="lt" >Lietuvių</option>
+              
+                <option value="hu" >Magyar</option>
+              
+                <option value="mi" >Māori</option>
+              
+                <option value="mn" >Монгол хэл</option>
+              
+                <option value="nl" >Nederlands</option>
+              
+                <option value="ja" selected >日本語</option>
+              
+                <option value="ja-Hira" >にほんご</option>
+              
+                <option value="nb" >Norsk Bokmål</option>
+              
+                <option value="nn" >Norsk Nynorsk</option>
+              
+                <option value="oc" >Occitan</option>
+              
+                <option value="or" >ଓଡ଼ିଆ</option>
+              
+                <option value="uz" >Oʻzbekcha</option>
+              
+                <option value="th" >ไทย</option>
+              
+                <option value="km" >ភាសាខ្មែរ</option>
+              
+                <option value="pl" >Polski</option>
+              
+                <option value="pt" >Português</option>
+              
+                <option value="pt-br" >Português Brasileiro</option>
+              
+                <option value="rap" >Rapa Nui</option>
+              
+                <option value="ro" >Română</option>
+              
+                <option value="ru" >Русский</option>
+              
+                <option value="nso" >Sepedi</option>
+              
+                <option value="tn" >Setswana</option>
+              
+                <option value="sk" >Slovenčina</option>
+              
+                <option value="sl" >Slovenščina</option>
+              
+                <option value="sr" >Српски</option>
+              
+                <option value="fi" >Suomi</option>
+              
+                <option value="sv" >Svenska</option>
+              
+                <option value="vi" >Tiếng Việt</option>
+              
+                <option value="tr" >Türkçe</option>
+              
+                <option value="uk" >Українська</option>
+              
+                <option value="zh-cn" >简体中文</option>
+              
+                <option value="zh-tw" >繁體中文</option>
+              
+              </select>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+
+    
+<!-- templates/modal-login.html block -->
+	    <div class="modal hide fade in" id="login-dialog" style="width: 450px">
+        <form method="post" action="/login/">
+          <fieldset>
+            <div class="modal-header">
+              <a href="#" data-dismiss="modal" class="close">x
+              </a>
+	      <h3>サインイン</h3>
+            </div>
+            <div class="modal-body">
+            
+              <div class="control-group">
+		      <label class="control-label" for="username">ユーザー名
+                </label>
+                <div class="controls">
+                  <input class="username" type="text" name="username" maxlength="30" />
+                </div>
+              </div>
+              <div class="control-group">
+		            <label class="control-label" for="password">パスワード
+                </label>
+                <div class="controls">
+                  <input type="password" name="password" class="password" />
+                </div>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <span class="error">
+              </span>
+              <div class="buttons-right">
+                <button class="button primary" type="submit">サインイン</button> 
+                
+		<a data-control="registration">Scratchに参加する</a>
+                
+              </div>
+            </div>
+           
+          </fieldset>
+        </form>
+        <iframe class="iframeshim" frameborder="0" scrolling="no"><html><head></head><body></body></html></iframe>
+      </div>
+<!-- end templates/modal-login.html -->
+
+    
+        <div id="registration" class="registration modal hide fade" data-backdrop="static">
+          <iframe class="iframeshim" frameborder="0" scrolling="no"><html><head></head><body></body></html></iframe>
+        </div>
+    
+
+    
+    
+
+    
+    
+
+    <script type="text/javascript" src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//js/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__/js/main.js" charset="utf-8"></script>
+    <script type="text/javascript" src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__/js/base.js" charset="utf-8"></script>
+    <script type="text/javascript" src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__/js/lazyload.js" charset="utf-8"></script>
+    
+<!-- templates/profiles/profile_detail.html block js -->
+
+<script src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//js/swfobject.js"></script>
+<script src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//js/apps/project/scratch_app.js"></script>
+<script>Scratch.profileHasFeatured = true</script>
+
+<script src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//js/lib/jquery.ui.widget.js"></script>
+<script src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//js/lib/blueimp-jquery-file-upload/jquery.iframe-transport.js"></script>
+<script src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//js/lib/blueimp-jquery-file-upload/jquery.fileupload.js"></script>
+<script>
+  $(document).ready(function() {
+    scratch.notifications.loadActivity($('#activity-feed'), {'friends': false, 'max': 6, 'actor': 'mamedaihuku777'});
+  });
+    sessionStorage.setItem("explore_by", "creator")
+    sessionStorage.removeItem("gallery_id")
+</script>
+<!-- end block js -->
+
+    
+
+    
+
+
+
+<script type="text/template" id="template-collection-count">
+  <%- count %>
+</script>
+
+<script type="text/template" id="template-comment-actions">
+<% if (can_delete) { %>
+  <% if (is_staff && comment_user == current_user) { %>
+    <span data-control="delete" class="actions report">Delete</span>
+  <% } else if (type != "gallery" || comment_user == current_user) { %>
+    <span data-control="delete" class="actions report">Delete</span>
+  <% } %>
+<% } %>
+<% if (current_user != comment_user) { %>
+  <span data-control="report" class="actions report">
+  <% if (student_of_educator) { %>
+    削除
+  <% } else { %>
+    報告
+  <% } %></span>
+<% } %>
+</script>
+
+<script type="text/template" id="template-modal-login">
+<div class="modal hide fade in" id="login-dialog" style="width: 450px">
+  <form method="post" action="/login/">
+    <fieldset>
+      <div class="modal-header">
+        <a href="#" data-dismiss="modal" class="close">x
+        </a>
+        <h3>Login</h3>
+      </div>
+      <div class="modal-body">
+        <div class="control-group">
+        <label class="control-label" for="username">ユーザー名
+          </label>
+          <div class="controls">
+            <input id="username" type="text" name="username" maxlength="30" />
+          </div>
+        </div>
+        <div class="control-group">
+        <label class="control-label" for="password">パスワード
+          </label>
+          <div class="controls">
+            <input type="password" name="password" id="password" />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span class="error">
+        </span>
+        <span class="button primary" id="sign-in" data-control="site-login">
+        <span>{% trans "Sign in" $}
+          </span>
+        </span>
+      </div>
+    </fieldset>
+  </form>
+</div>
+</script>
+
+<script type="text/template" id="template-comment-reply">
+  <form>
+    <div class="control-group tooltip right">
+      <textarea name="content"></textarea>
+      
+      <span class="hovertext error" data-control="error" data-content="comment-error"><span class="arrow"></span><span class="text"></span></span>
+      <span class="small-text">残り<span id="chars-left-<%- comment_id %>">500</span>文字。</span>
+    </div>
+    <div class="control-group">
+        <div class="button small" data-parent-thread="<%- thread_id %>" data-commentee-id="<%- commentee_id %>" data-control="post"><a href="#null">投稿</a></div>
+        <div class="button small grey" data-control="cancel"><a href="#null">キャンセル</a></div>
+      <span class="notification"></span>
+    </div>
+  </form>
+</script>
+
+<script type="text/template" id="template-deletion-canceled">
+<div class="deletion-canceled">
+  <div class="form">
+    <p>
+    Your account was scheduled for deletion but you logged in. Your account has been reactivated. If you didn’t request for your account to be deleted, you should <a href="/accounts/password_change/">change your password</a> to make sure your account is secure. 
+    </p>
+  </div>
+</div>
+</script>
+
+<script type="text/template" id="template-unsupported-browser">
+  <div class="unsupported-browser banner" data-cue="unsupported_browser">
+    <div class="container">
+      <span>Scratch works best on newer browsers. We suggest you upgrade to <a href="/info/faq/#requirements">a supported browser</a>, <a href="/scratch2download/">download the offline editor</a>, <a href="https://en.scratch-wiki.info/wiki/List_of_Bug_Workarounds">or read about common workarounds</a>.</span>
+      <div class="close">x</div>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="template-unsupported-msie">
+  <div class="unsupported-browser banner" data-cue="unsupported_browser">
+    <div class="container">
+      <span>Scratch will stop supporting Internet Explorer 8 on April 30, 2015. We suggest you upgrade to <a href="/info/faq/#requirements">a supported browser</a>, <a href="/scratch2download/">download the offline editor</a>, or <a href="https://en.scratch-wiki.info/wiki/List_of_Bug_Workarounds">read about common workarounds</a>.</span>
+      <div class="close">x</div>
+    </div>
+  </div>
+</script>
+
+
+
+<script type="text/template" id="template-bio-status-content">
+  
+    <div id="bio" class="editable read">
+      <form>
+        <textarea name="bio">Most of the English I speak is done using translation software, so it&#39;s not very accurate. Sorry about that.
+
+称号：お茶好きの掃除嫌いのロボット
+
+恐らく次元一承認欲求の高い中一日本人
+(日本人が承認欲求高いという意味ではない)
+スク友募集中(上限なし)
+
+宣伝大歓迎(僕自身h((するよ)</textarea>
+      </form>
+    </div>
+  
+</script>
+
+<script type="text/template" id="template-project-collection">
+  <% _.each(collection, function(project) { %>
+    <li>
+      <div class="project thumb" data-id="<%- project.id %>">
+        <img src="<%- project.thumbnail_url %>">
+        <span class="title">
+          <a href="/projects/<%- project.id %>"><%- project.title %></a>
+        </span>
+      </div>
+    </li>
+  <% }); %>
+</script>
+
+<script type="text/template" id="template-modal-container">
+  <div class="modal-header">
+    <span class="close" data-dismiss="modal" aria-hidden="true">×</span>
+    <h3 id="myModalLabel">My Shared Projects</h3>
+    <div class="feature-label">
+      <label for="feature-label">Label</label>
+      <select name="feature-label">
+        <option value="" >注目のプロジェクト</option>
+      
+        <option value="0" >注目のチュートリアル</option>
+      
+        <option value="1" >作成中</option>
+      
+        <option value="2" >これをリミックスして！</option>
+      
+        <option value="3" selected="selected">私のお気に入り</option>
+      
+        <option value="4" >Scratchをやる理由</option>
+      </select>
+    </div>
+  </div>
+  <div data-content="modal-body" class="modal-body">
+    
+    <ul data-content="collection" class="media-grid projects">
+    </ul>
+    <div class="button small grey" data-control="load-more"><span>Load more</span></div>
+    
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+    <button class="btn blue btn-primary" data-control="save">OK</button>
+  </div>
+</div>
+</script>
+
+<script type="text/template" id="template-report">
+  <div class="profile-report">
+      このユーザーのプロフィール内で、失礼や不適切だったり、あるいは、<a href="/community_guidelines" target="_blank">Scratchのコミュニティーガイドライン</a>に反していると思うところを選んでください。
+    <br>
+    <p class="errors">不適切な部分を選んでください。</p>
+    <form class="form-horizontal" id='report_form'>
+      <input type="radio" id='radio_username' name="report_value" value="username">ユーザー名</input>
+      <br>
+      <input type="radio" id='radio_icon' name="report_value" value="icon">アイコン</input>
+      <br>
+      <input type="radio" id='radio_description' name="report_value" value="description">私について</input>
+      <br>
+      <input type="radio" id='radio_working_on' name="report_value" value="working_on">私が取り組んでいること</input>
+    </form>
+    <div>
+      このユーザーが、コミュニティーガイドラインに反するコメントやプロジェクト、スタジオを作成した場合は、それらのコメントなどにある報告ボタンを押してください。
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="template-thanks">
+<div class="profile-report">
+  <div class="form">
+    <div>Thank you. We have received your report. The Scratch Team will review this user based on the Scratch community guidelines.
+    </div>
+  </div>
+</div>
+</script>
+
+
+
+
+
+
+
+    
+
+    <!-- load javascript translation catalog, and javascript fuzzy date library -->
+    <script type="text/javascript" src="/jsi18n/"></script>
+    <script type="text/javascript" src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__/js/lib/jquery.timeago.settings.js"></script>
+
+    
+    <script type="text/javascript" src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//js/apps/registration/main.js"></script>
+    
+
+    <script type="text/javascript" src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//js/apps/global.js"></script>
+    <script>
+      Scratch.NotificationPollTime = 300000;
+    </script>
+
+    
+<script src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//js/apps/userprofile/main.js"></script>
+<script src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//js/apps/userprofile/models.js"></script>
+<script src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//js/apps/userprofile/views.js"></script>
+<script src="//cdn.scratch.mit.edu/scratchr2/static/__a2f00fe7102c893bc1637af1bc74bf9e__//js/apps/userprofile/models/user-detail.js"></script>
+
+
+    
+    <script>
+    $(document).on("accountnavready", function(e){
+        $('#topnav .messages').notificationsAlert();
+    });
+    </script>
+    
+    <script type="text/javascript">
+      var today = new Date();
+      if (today.getDate() === 1 && today.getMonth() === 3) {
+        document.write(';');
+      }
+    </script>
+  </body>
+  <!-- Site Version: 3.2026.06.15.release.2_2026_06_15_10_11 -->
+</html>
